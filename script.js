@@ -1,0 +1,26 @@
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows:true,
+		dots:true,
+		slidesToShow:4,
+		slidesToScroll:4,
+		speed:1000,
+		infinite:true,
+		initialSlide:0,
+		autoplay:true,
+		autoplaySpeed:5000,
+		pauseOnFocus:true,
+		pauseOnHover:true,
+		pauseDotsHover:true,
+		variableWidth:false,
+		responsive:[
+			{
+				breakpoint:600,
+				settings: {
+					slidesToShow:2,
+					slidesToScroll:2,
+				}
+			}
+		]
+	});
+});
